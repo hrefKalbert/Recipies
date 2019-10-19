@@ -140,8 +140,8 @@ const renderIngridients = function(dom) {
     del.textContent = 'X'
     del.style.textDecoration = 'none'
     del.style.color = 'rgb(34, 175, 194)'
-    del.addEventListener('click', ()=> {
-
+    del.addEventListener('click', (e)=> {
+      e.preventDefault()
 
       getIngridients().splice(index,1)
       toStorage()

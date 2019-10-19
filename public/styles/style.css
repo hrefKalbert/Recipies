@@ -43,7 +43,8 @@
       display: block;
       margin: 2.4rem 0;
       padding: .8rem;
-      width: 100%;
+      width: 50%;
+      margin: 2rem auto;
     }
     
     .b-input {
@@ -55,15 +56,16 @@
       margin: 2.4rem 0;
       min-height: 15rem;
       padding: .8rem;
-      width: 100%;
+      width: 50%;
+      margin: 1rem auto;
     }
 
     .ingridients {
-      width: 45%;
+      width:50%;
       padding:20px;
       border-radius: 15px;
       border: none;
-      display:inline;
+      /* display:inline; */
       margin: 20px;
       font-size: 1.5rem;
       font-weight: 300;
@@ -82,7 +84,7 @@
     }
 
     #submit {
-      width:45%;
+      
       padding: 20px;
       border-radius:15px;
       border:none;
@@ -92,7 +94,7 @@
     }
 
     #submit:hover {
-  background-color: rgba(245, 103, 38, 0.7);
+      background-color: rgba(245, 103, 38, 0.7);
       
     }
 
@@ -191,7 +193,55 @@
       flex-direction: column;
 
     }
+
+    .ingridients {
+      width: 70% ;
+      text-align: center;
     }
+    .t-input {
+      box-sizing: border-box;
+      width: 80%;
+      margin: 1rem auto;
+      min-height: 1rem;
+    }
+    .b-input {
+      box-sizing: border-box;
+      min-height: 1rem;
+      width: 80% ;
+      margin-top: 2rem;
+      margin-bottom: 2rem; 
+      margin-left: auto;
+      margin-right: auto;
+      transition: width 2s, min-height 2s;
+    }
+
+    .b-input:focus {
+      width: 100%;
+      min-height: 20rem;
+    }
+
+    #filter {
+      width: 50%
+    }
+
+    #filter:focus {
+      width: 80%
+    }
+
+
+
+  }
+
+  .ingridients.button {
+    visibility: hidden;
+  }
+
+/* 
+    #ingridients-field:focus + button {
+      visibility: visible;
+      display: inline;
+    }
+    }  */
 
     .radio-group {
 
@@ -199,4 +249,3 @@
     }
 
 
- 

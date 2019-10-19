@@ -25,8 +25,15 @@ document.querySelector('.form-group').addEventListener('submit', (e) => {
 
 })
 
+document.querySelector('#ingridients-field').addEventListener('input', (e) => {
+  if (e.target.value.trim()) {
+    e.target.nextElementSibling.style.visibility = 'visible'
+  } else {
+    e.target.nextElementSibling.style.visibility = 'hidden'
+  }
+})
 
-document.querySelector('.ingridients.button').addEventListener('click', () => {
+document.querySelector('.ingridients.button').addEventListener('click', (e) => {
   const notUnique = getIngridients().reduce((acc, cur) => {
     return acc || cur === iValue.value || cur.ingridient === iValue.value
   }, false)
@@ -41,13 +48,15 @@ document.querySelector('.ingridients.button').addEventListener('click', () => {
       
 
       renderIngridients(document.querySelector('.checkboxes'))
-
+      e.target.style.visibility = 'hidden'
     }
   }
 })
 
 updateR(title.value, body.value, hash)
 
+
+document.body.addEventListener('touchmove',() => {console.log('touchmove')})
 
 
 
