@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="icons/1656175.svg">
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="heading">
+      <h1 class="title">Recipies</h1>
+    </div>
+    <div class="subheader"></div>
+    <h2 class="subheader">Have a look at your stored recipies</h2>
+  </div>
+  <div class="nav">
+    <a href="index.html"><img width="30px" height="30px" src="icons/126830.svg" alt="home"></a>
+  </div>
+  <div class="container form-container">
+    <h2 class="subheader">Recipie</h2>
+    <form class="form-group">
+      <div>
+        <input type="text" id="input-title" class="t-input"placeholder="Recipie Name...">
+      </div>
+      <div>
+        <textarea name="" id="input-body" class="b-input" cols="30" placeholder="Steps..." rows="10"></textarea>
+      </div>
+      <div>
+        <input type="submit" id="submit" class="button" value="Save changes">
+      </div>
+    </form>
+    <div class="ingridients-group">
+      <h2>Ingridients</h2>
+    </div>
+    <div>
+      <div class="checkboxes"></div>
+      <input type="text" class="ingridients" id="ingridients-field" placeholder="New ingridient">
+      <button class="ingridients button" id="ingridientBtn>">Add new ingridient</button>
+
+    </div>
+  </div>
+
+  <script src="scripts/edit-bundle.js"></script>
+
+</body>
+
+</html>
