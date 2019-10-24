@@ -33,7 +33,7 @@ getRecipies().forEach((cur, index) => {
 
 populateIndex(document.querySelector('.recipie-container'))
 
-document.querySelector('.button').addEventListener('click', (e) => {
+document.querySelector('#mainAddBtn').addEventListener('click', (e) => {
 
 
   location.assign(`edit.html#${createR()}`)
